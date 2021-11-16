@@ -1,0 +1,18 @@
+{
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset represented by this NFT"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset represented by this NFT"
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset that this NFT represents. For instance: an image of a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5."
+        }
+    }
+}
