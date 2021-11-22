@@ -25,7 +25,6 @@ const main = () => {
   console.log("Waiting 5 blocks for confirmation...");
   MyNFT
     .mintNFT(process.env.PUBLIC_KEY, tokenURI)    
-    //.then((tx) => console.log(`Your transaction hash is: ${tx.hash} waiting 5 blocks for confirmation`))
     .then((tx) => tx.wait(5))
     .then((receipt) => console.log(`Your transaction is confirmed, its receipt is: ${receipt.transactionHash}`))
 
