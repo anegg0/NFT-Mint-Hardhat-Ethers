@@ -6,9 +6,9 @@ const contractInterface = contract.abi;
 // https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html#provider-object
 let provider = ethers.provider;
 
+const tokenURI = "";
 const privateKey = `0x${process.env.PRIVATE_KEY}`;
 const wallet = new ethers.Wallet(privateKey);
-const tokenURI = "https://bafkreicy65wumngcgryslwjmbgdiaypkzbd2t5mohgpt3gksrxgks2yrse.ipfs.dweb.link/";
 
 wallet.provider = provider;
 const signer = wallet.connect(provider);
